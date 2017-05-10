@@ -59,3 +59,8 @@
 .col-lg-12{
     width: 100%;
 }
+
+.center{
+    text-align: center;
+    color: #333333;
+}

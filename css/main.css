@@ -16,6 +16,7 @@ nav{
 	padding: 40px 0 25px;
 	position: fixed;
 	width: 100%;
+	z-index: 1000;
 }
 nav ul{
 	list-style-type: none;
@@ -60,7 +61,7 @@ header .container{
 	padding-top: 200px;
     padding-bottom: 80px;
 }
-hr.star{
+hr.star , hr.star-portfolio{
 	padding: 0;
 	border: none;
 	border-top: solid 5px;
@@ -69,7 +70,7 @@ hr.star{
 	margin: 25px auto 0px;
 }
 
-hr.star:after{
+hr.star:after ,hr.star-portfolio:after{
 	content: "\f005";
 	font-family: FontAwesome;
 	display: inline-block;
@@ -80,6 +81,14 @@ hr.star:after{
 	border-color: white;
 	background-color: #18BC9C;
  	color: #ffffff;
+}
+
+hr.star-portfolio {
+  border-color: #2C3E50;
+}
+hr.star-portfolio:after {
+  background-color: white;
+  color: #2C3E50;
 }
 
 .cnt-intro h1{
@@ -97,10 +106,68 @@ hr.star:after{
  	font-weight: 300;
 }
 
-/*Aplicar Transitions*/
-/*
-.nav-scroll,.nav-left{
-	-webkit-transition: padding 0.3s;
-	-moz-transition: padding 0.3s;
-	transition: padding 0.3s;
-}*/
+section {
+    padding: 75px 0;
+}
+/*SECTION PORTFOLIO*/
+#portfolio h2{
+	font-size: 3rem;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #333333;
+}
+#portfolio .portfolio-img{
+ 	margin: 0 0 30px;
+  	right: 0;
+}
+
+#portfolio .container .row .col-lg-4{
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+#portfolio .cnt-img{
+	display: block;
+	max-width: 400px;
+	position: relative;
+	cursor: pointer;
+}
+
+.cnt-img .modal-cnt{
+	background: rgba(24, 188, 156, 0.9);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+}
+
+.cnt-img .modal-cnt .modal-img{
+	position: absolute;
+ 	width: 100%;
+  	height: 20px;
+  	font-size: 20px;
+  	text-align: center;
+  	top: 50%;
+  	margin-top: -12px;
+  	color: #ffffff;
+}
+
+#portfolio .cnt-img .modal-cnt:hover{
+	opacity: 1;
+}
+
+.cnt-img .modal-img i{
+	color: #ffffff;
+	margin-top: -15px;
+}
+
+.cnt-img img{
+	display:block;
+	max-width:100%; 
+	height:auto;
+}
+
