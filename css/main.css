@@ -221,7 +221,6 @@ section h2{
   	border-radius: 0;
   	font-size: 1.5rem;
   	background: none;
-  	box-shadow: none!important;
   	resize: none;
   	outline: 0px;
 }
@@ -229,18 +228,22 @@ section h2{
 .form-contact label{
 	display: block;
   	position: relative;
-  	top: 2em;
+  	top: 0rem;
   	margin: 0;
   	font-size: 0.85em;
-  	line-height: 1.764705882em;
-  	vertical-align: middle;
-  	vertical-align: baseline;
+  	line-height: 2rem;
   	opacity: 0;
 	transition: top 0.3s ease,opacity 0.3s ease;
 }
 
+/*Hacer efecto*/
+/*.form-contact label{
+	color: #18BC9C;
+	opacity: 1;
+}*/
+
 .form-contact textarea{
-	height: 150px;
+	height: 120px;
 }
 
 .btn-send{
