@@ -202,3 +202,56 @@ section h2{
     background: white;
     border: solid 2px white;
 }
+
+.form-contact{
+	position: relative;
+  	margin-bottom: 0;
+  	padding-bottom: 0.5em;
+  	border-bottom: 1px solid #eeeeee;
+}
+
+.form-contact input ,
+.form-contact textarea{
+	font-family: Arial;
+	z-index: 1;
+ 	position: relative;
+  	padding-right: 0;
+  	padding-left: 0;
+  	border: none;
+  	border-radius: 0;
+  	font-size: 1.5rem;
+  	background: none;
+  	box-shadow: none!important;
+  	resize: none;
+  	outline: 0px;
+}
+
+.form-contact label{
+	display: block;
+  	position: relative;
+  	top: 2em;
+  	margin: 0;
+  	font-size: 0.85em;
+  	line-height: 1.764705882em;
+  	vertical-align: middle;
+  	vertical-align: baseline;
+  	opacity: 0;
+	transition: top 0.3s ease,opacity 0.3s ease;
+}
+
+.form-contact textarea{
+	height: 150px;
+}
+
+.btn-send{
+	color:#fff;
+	background-color:#18BC9C;
+	border-color:rgb(24,188,156);
+	cursor: pointer;
+}
+
+.btn-send:hover{
+	background-color:#18BC9C;
+	border-color:rgb(24,188,156);
+	color: white;
+}
