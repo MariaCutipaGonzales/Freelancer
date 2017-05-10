@@ -62,5 +62,8 @@
 
 .center{
     text-align: center;
-    color: #333333;
+}
+
+.col-left-bs{
+    margin-left:16.66666667%
 }

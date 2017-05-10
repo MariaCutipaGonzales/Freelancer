@@ -84,11 +84,11 @@ hr.star:after ,hr.star-portfolio:after{
 }
 
 hr.star-portfolio {
-  border-color: #2C3E50;
+    border-color: #2C3E50;
 }
 hr.star-portfolio:after {
-  background-color: white;
-  color: #2C3E50;
+    background-color: white;
+    color: #2C3E50;
 }
 
 .cnt-intro h1{
@@ -110,7 +110,7 @@ section {
     padding: 75px 0;
 }
 /*SECTION PORTFOLIO*/
-#portfolio h2{
+section h2{
 	font-size: 3rem;
 	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
 	text-transform: uppercase;
@@ -169,4 +169,36 @@ section {
 	display:block;
 	max-width:100%; 
 	height:auto;
+}
+
+/*SECTION ABOUT*/
+#about{
+	background: #18BC9C;
+	color: #ffffff;
+}
+
+#about p{
+	font-size: 20px;
+	padding: 15px;
+	text-align: justify;
+	margin-bottom: 40px;
+}
+
+.btn{
+	padding:10px 16px;
+	line-height:1.3333333;
+	border-radius:6px;
+	color: white;
+  	font-size: 20px;
+  	border: solid 2px white;
+  	background: transparent;
+  	transition: all 0.3s ease-in-out;
+  	margin-top: 15px;
+  	text-decoration: none;
+}
+
+.btn:hover{
+	color: #18BC9C;
+    background: white;
+    border: solid 2px white;
 }
